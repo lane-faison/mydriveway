@@ -1,6 +1,6 @@
 body {
-  background: #fff;
-  padding-top: 70px;
+  background: #f5fff0;
+  padding: 70px 0;
 }
 
 /*************** NAV BAR ***************/
@@ -11,6 +11,10 @@ body {
 
 .navbar-brand {
   padding: 5px 15px;
+}
+
+.navbar-fixed-top {
+  background: #b8ff94;
 }
 
 /*************** PAGE TITLES ***************/
@@ -24,3 +28,11 @@ body {
 }
 
 /*************** HOME PAGE: BLIMP IMAGE ***************/
+
+
+/*************** RENT AND FIND BOXES ***************/
+.rent-or-find {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
