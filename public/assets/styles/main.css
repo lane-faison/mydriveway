@@ -1,0 +1,26 @@
+body {
+  background: #fff;
+  padding-top: 70px;
+}
+
+/*************** NAV BAR ***************/
+.car-logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-brand {
+  padding: 5px 15px;
+}
+
+/*************** PAGE TITLES ***************/
+.page-header {
+  font-family: 'Chewy', cursive;
+  font-size: 75px;
+}
+
+.page-sub-header {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*************** HOME PAGE: BLIMP IMAGE ***************/
