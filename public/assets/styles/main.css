@@ -28,7 +28,19 @@ body {
 }
 
 /*************** HOME PAGE: BLIMP IMAGE ***************/
+.jumbotron {
+  max-width: 630px;
+  background: #fff;
+  border: 5px solid #333;
+  margin: 0 auto 15px auto;
+}
 
+.jumbotron img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  max-width: 600px;
+}
 
 /*************** RENT AND FIND BOXES ***************/
 .rent-or-find {
