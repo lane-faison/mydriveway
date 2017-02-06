@@ -31,12 +31,14 @@
     <script>
       function initMap() {
         var broncos = {lat: 39.743993, lng: -105.021949};
+        // var other = {lat: 39.7430, lng: -105.022};
+
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 15,
           center: broncos
         });
         var marker = new google.maps.Marker({
-          position: broncos,
+          position: broncos, 
           map: map
         });
       }
