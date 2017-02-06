@@ -31,17 +31,36 @@
     <script>
       function initMap() {
         var broncos = {lat: 39.743993, lng: -105.021949};
-        // var other = {lat: 39.7430, lng: -105.022};
+        var locations = [
+          ['Title A', 39.743981,-105.021849, 1],
+          ['Title B', 39.743,-105.0217, 2],
+          ['Title C', 39.7437,-105.02184, 3],
+          ['Title D', 39.742,-105.021799, 4]
+        ];
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
+          zoom: 13,
           center: broncos
         });
-        var marker = new google.maps.Marker({
-          position: broncos, 
-          map: map
+
+        var infowindow = new google.maps.InfoWindow;
+
+        var marker, i;
+
+        for (i=0; i<locations.length;i++) {
+          marker = new google.maps.Marker({
+            position: new google.maps.LatLng(locations[i][1],locations[i][2]),
+            map: map
         });
+
+        google.maps.event.addListener(marker, 'click', (function(marker,i) {
+          return function() {
+            infowindow.setContent(locations[i][0]);
+            infowindow.open(map,marker);
+          }
+        })(marker,i));
       }
+    }
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdBhv4yqZBnANmESgF86IjxmwGpvLojMc&callback=initMap">
@@ -69,7 +88,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+            <li><a href="index.html">Home </a></li>
             <li><a href="about.html">About</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
