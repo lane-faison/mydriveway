@@ -21,50 +21,12 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.css">
 
     <!-- JavaScript Link -->
-    <script type="text/javascript" src="assets/scripts/main.js"></script>
+    <script type="text/javascript" src="assets/scripts/find.js"></script>
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chewy|Montserrat" rel="stylesheet">
 
-    <!-- Google Maps API -->
-    <script>
-      function initMap() {
-        var broncos = {lat: 39.743993, lng: -105.021949};
-        var locations = [
-          ['Title A', 39.743981,-105.021849, 1],
-          ['Title B', 39.743,-105.0217, 2],
-          ['Title C', 39.7437,-105.02184, 3],
-          ['Title D', 39.742,-105.021799, 4]
-        ];
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: broncos
-        });
-
-        var infowindow = new google.maps.InfoWindow;
-
-        var marker, i;
-
-        for (i=0; i<locations.length;i++) {
-          marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1],locations[i][2]),
-            map: map
-        });
-
-        google.maps.event.addListener(marker, 'click', (function(marker,i) {
-          return function() {
-            infowindow.setContent(locations[i][0]);
-            infowindow.open(map,marker);
-          }
-        })(marker,i));
-      }
-    }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdBhv4yqZBnANmESgF86IjxmwGpvLojMc&callback=initMap">
-    </script>
 
     <title>myDriveway</title>
   </head>
@@ -98,6 +60,9 @@
       <!--"page-header" class adds a line under the title and across the container -->
       <h1 class="page-header">myDriveway</h1>
       <div id="map"></div>
+      <div class="location_list">
+        <h3>Available Driveways</h3>
+      </div>
     </main>
 
     <footer>
@@ -115,5 +80,11 @@
         </div><!-- /.container-fluid -->
       </nav>
     </footer>
+
+    <!-- Google Maps API Key -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdBhv4yqZBnANmESgF86IjxmwGpvLojMc&callback=initMap">
+    </script>
+
   </body>
+
 </html>
