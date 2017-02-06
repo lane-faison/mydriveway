@@ -1,0 +1,84 @@
+body {
+  background: #fff;
+  padding: 40px 0 120px 0;
+}
+
+/*************** NAV BAR ***************/
+.car-logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar-brand {
+  padding: 5px 15px;
+}
+
+.navbar-fixed-top {
+  background: #b8ff94;
+}
+
+/*************** PAGE TITLES ***************/
+.page-header {
+  font-family: 'Chewy', cursive;
+  font-size: 75px;
+  text-align: center;
+}
+
+.page-sub-header {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+/*************** HOME PAGE: BLIMP IMAGE ***************/
+.jumbotron {
+  max-width: 630px;
+  background: #fff;
+  border: 5px solid #333;
+  margin: 0 auto 15px auto;
+  padding: 20px 30px;
+}
+
+.jumbotron img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  max-width: 600px;
+}
+
+/*************** RENT AND FIND BOXES ***************/
+.rent-or-find {
+}
+
+.caption {
+  border: 5px solid #333;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.thumbnail {
+  border: 1px solid #333;
+  background: #e1f4c9;
+}
+/*************** TEAM LOGOS ***************/
+.team_logos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team_logos img {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+}
+
+/*************** GOOGLE MAPS ***************/
+
+#map {
+  width: 300px;
+  height: 200px;
+  background-color: grey;
+}

@@ -27,6 +27,24 @@
     <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Chewy|Montserrat" rel="stylesheet">
 
+    <!-- Google Maps API -->
+    <script>
+      function initMap() {
+        var broncos = {lat: 39.743993, lng: -105.021949};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: broncos
+        });
+        var marker = new google.maps.Marker({
+          position: broncos,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBdBhv4yqZBnANmESgF86IjxmwGpvLojMc&callback=initMap">
+    </script>
+
     <title>myDriveway</title>
   </head>
   <body>
@@ -49,7 +67,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
             <li><a href="about.html">About</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -58,6 +76,7 @@
     <main class="container">
       <!--"page-header" class adds a line under the title and across the container -->
       <h1 class="page-header">myDriveway</h1>
+      <div id="map"></div>
     </main>
 
     <footer>
