@@ -32,6 +32,7 @@ body {
   font-family: 'Chewy', cursive;
   font-size: 75px;
   text-align: center;
+  letter-spacing: 2px;
   color: #fb4f14;
   text-shadow:  -1px -1px 0 #024,
                 1px -1px 0 #024,
@@ -114,6 +115,11 @@ body {
   border: 3px solid #333;
 }
 
+/*************** MATCHUP LOGOS ***************/
+.resetAndMatchup img {
+  width: 150px;
+  height: auto;
+}
 
 /*************** LOCATION LIST ***************/
 .location_list h3 {

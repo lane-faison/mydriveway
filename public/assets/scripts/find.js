@@ -28,15 +28,15 @@ function initMap() {
 
   var infowindow = new google.maps.InfoWindow;
 
-  var marker;
-
-  // $('.reset').on('click', function() {
-  //   google.maps.event.trigger(,'resize',{});
-  // });
+  var markers = [];
 
   // Below, locationsNew returns a new array containing only the driveway locations for the selected event. select option:selected gets the needed event for the filter.
 
   $('select.event-select').change(function() {
+
+    markers.forEach(function (marker) {
+      marker.setMap(null);
+    });
 
     var selected = $(".event-select option:selected").val();
     $('section').hide();
@@ -48,13 +48,14 @@ function initMap() {
         return location;
       }
     };
-
     for (let i=0; i<locationsNew.length;i++) {
 
-      marker = new google.maps.Marker({
+      var marker = new google.maps.Marker({
         position: new google.maps.LatLng(locationsNew[i].lat,locationsNew[i].lng),
           map: map
       });
+
+      markers.push(marker);
 
       // Reveals the assigned letter and price of spot
       google.maps.event.addListener(marker, 'mouseover', (function(marker,i) {
@@ -78,6 +79,7 @@ function initMap() {
       $section.append($email);
       $('.location_list').append($section);
 
+      //Specifically formatted email for when 'email owner' is clicked
       $email.on('click', function(event) {
         event.preventDefault();
 
