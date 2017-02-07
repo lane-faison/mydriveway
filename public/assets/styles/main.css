@@ -62,7 +62,7 @@ body {
   border: 1px solid #333;
   background: #e1f4c9;
 }
-/*************** TEAM LOGOS ***************/
+/*************** TEAM LOGOS & STADIUM ***************/
 .team_logos {
   display: flex;
   flex-direction: column;
@@ -73,6 +73,20 @@ body {
   width: 100%;
   height: auto;
   max-width: 150px;
+  padding: 10px 0;
+}
+
+.stadium_div {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.stadium {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  max-width: 600px;
+  border: 4px solid #333;
 }
 
 /*************** GOOGLE MAPS ***************/
@@ -91,11 +105,11 @@ body {
   text-align: center;
 }
 
-label {
+.event {
   font-size: 30px;
 }
 
-label, .event-select, .reset {
+.event, .event-select, .reset {
   display: table;
   margin: auto;
 
@@ -119,4 +133,11 @@ label, .event-select, .reset {
   widgth: 99px;
   color: #fff;
   background: #178000;
+}
+
+/*************** REGISTRATION FORM ***************/
+.alert {
+  display: none;
+  margin-top: 15px;
+  width: 375px;
 }
