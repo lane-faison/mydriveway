@@ -15,7 +15,7 @@ function showInfo(data, tabletop) {
     locations.push(data[i]);
   }
 }
-console.log(locations);
+
 // Google Maps API //
 
 function initMap() {
@@ -29,6 +29,10 @@ function initMap() {
   var infowindow = new google.maps.InfoWindow;
 
   var marker;
+
+  // $('.reset').on('click', function() {
+  //   google.maps.event.trigger(,'resize',{});
+  // });
 
   // Below, locationsNew returns a new array containing only the driveway locations for the selected event. select option:selected gets the needed event for the filter.
 
@@ -83,6 +87,13 @@ function initMap() {
         window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
       });
     }
+
+    // $('.reset').on('click', function() {
+    //   for (var i = 0; i < locationsNew.length; i++) {
+    //     locationsNew[i].setMap(null);
+    //   }
+    //   locationsNew = [];
+    // });
   }) //.change function line 23
 }
 
