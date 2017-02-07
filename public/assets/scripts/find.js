@@ -20,13 +20,6 @@ console.log(locations);
 
 function initMap() {
   var broncos = {lat: 39.743993, lng: -105.021949};
-  // var locations = [
-  //   ['$20', 39.743981,-105.029849, 2,'A', 'example1@yahoo.com','Broncos vs. Patriots'],
-  //   ['$30', 39.743,-105.02, 1,'B','example2@yahoo.com','Broncos vs. Patriots'],
-  //   ['$5', 39.7437,-105.03284, 3,'C','example3@yahoo.com','Broncos vs. Chiefs'],
-  //   ['$12', 39.742,-105.0116, 2,'D','example4@yahoo.com','Broncos vs. Patriots'],
-  //   ['$5', 39.751,-105.0214, 2, 'E','example5@yahoo.com','Broncos vs. Chiefs']
-  // ];
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
@@ -86,7 +79,7 @@ function initMap() {
 
         let email = locationsNew[i].Email;
         var subject = 'myDriveway: I would like to rent your spot!';
-        var emailBody = 'Hello, is your spot still available?';
+        var emailBody = 'Hello, I am interested in renting one of your spots (Location: ' + locationsNew[i].Address + ', ' + locationsNew[i].City + ', ' + locationsNew[i].State + ' ' + locationsNew[i].Zip + ') during the ' + locationsNew[i].Event + " game. Is this spot still available? Thank you.";
         window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
       });
     }
