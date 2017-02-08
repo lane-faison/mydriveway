@@ -12,6 +12,15 @@ $(document).ready(function () {
       }
     }
     valid();
+    event.preventDefault();
+
+    let email = 'faisonusmc@gmail.com';
+
+    var subject = 'myDriveway: Spot Registration';
+
+    var emailBody = "Hello, I would like to register my driveway for the " + $('.eventReg').val() + " game. My information is: " + $('.emailReg').val() + ", " + $('.addressReg').val() + ", " + $('.cityReg').val() + ", " + $('.stateReg').val() + ", " + $('.zipReg').val() + ". I will notify you when my spot has been taken.";
+
+    window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
 
   });
 
@@ -24,5 +33,4 @@ $(document).ready(function () {
     $('.alert').css('display','none');
     $('.alert-success').css('display','block');
   }
-
 })
