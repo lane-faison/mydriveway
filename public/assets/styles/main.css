@@ -11,7 +11,7 @@ body {
 .navbar-main {
   height: 60px;
   background: #024;
-  padding-right: 0;
+  padding-right: 10px;
 }
 .car-logo {
   height: 40px;
@@ -21,6 +21,14 @@ body {
 
 .navbar-brand {
   padding: 5px 15px;
+}
+
+.navbar-header button {
+  background: #fb4F14;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background: #024;
 }
 
 #active {

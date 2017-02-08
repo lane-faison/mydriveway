@@ -1,5 +1,7 @@
 ////////////// Tabletop API //////////////
 
+
+
 var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/16648beL07PQtYpHyTsz6ZagX86GJ0vZRDqj5mv0QpcY/pubhtml';
 
 var locations = [];
