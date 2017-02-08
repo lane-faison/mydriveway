@@ -50,24 +50,30 @@ body {
 }
 
 /*************** PAGE SUB TITLE ***************/
+.row_main {
+  margin: 30px 0 30px 0;
+  padding: 10px;
+}
+
+.subtitle-caption {
+  height: 240px;
+}
 
 .page-sub-header {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin: 50px auto 40px auto;
   color: #024;
+  font-size: 35px;
 }
 
 /*************** HOME PAGE: BLIMP IMAGE ***************/
-.jumbotron {
-  max-width: 630px;
-  background: #fff;
-  border: 5px solid #024;
-  margin: 0 auto 40px auto;
+.driveway_scene {
+  max-width: 600px;
+  margin: 10px 0 40px 0;
   padding: 20px 30px;
 }
 
-.jumbotron img {
+.driveway_scene img {
   width: 100%;
   height: auto;
   max-height: 300px;
@@ -75,9 +81,6 @@ body {
 }
 
 /*************** RENT AND FIND BOXES ***************/
-.rent-or-find {
-}
-
 .caption {
   border: 5px solid #024;
   background: #fff;
@@ -145,7 +148,7 @@ body {
   font-size: 30px;
 }
 
-.event, .event-select, .reset {
+.event, .event-select {
   display: table;
   margin: auto;
 
@@ -177,4 +180,15 @@ body {
   display: none;
   margin-top: 15px;
   width: 375px;
+}
+
+/*************** REGISTRATION FORM ***************/
+.navbar-fixed-bottom {
+  background: #024;
+}
+
+#copyright {
+  color: #fb4f14;
+  text-decoration: none;
+  text-shadow: none;
 }
