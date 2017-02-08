@@ -15,7 +15,6 @@ function showInfo(data, tabletop) {
     locations.push(data[i]);
   }
 }
-
 // Google Maps API //
 
 function initMap() {
@@ -89,13 +88,6 @@ function initMap() {
         window.location = 'mailto:' + email + '?subject=' + subject + '&body=' + emailBody;
       });
     }
-
-    // $('.reset').on('click', function() {
-    //   for (var i = 0; i < locationsNew.length; i++) {
-    //     locationsNew[i].setMap(null);
-    //   }
-    //   locationsNew = [];
-    // });
   }) //.change function line 23
 }
 

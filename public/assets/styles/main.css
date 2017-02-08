@@ -50,12 +50,13 @@ body {
 }
 
 /*************** PAGE SUB TITLE ***************/
+.row_main {
+  margin: 30px 0 30px 0;
+  padding: 10px;
+}
+
 .subtitle-caption {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  padding: 7px 0;
-  margin: 60px 0;
+  height: 240px;
 }
 
 .page-sub-header {
@@ -147,7 +148,7 @@ body {
   font-size: 30px;
 }
 
-.event, .event-select, .reset {
+.event, .event-select {
   display: table;
   margin: auto;
 
@@ -179,4 +180,15 @@ body {
   display: none;
   margin-top: 15px;
   width: 375px;
+}
+
+/*************** REGISTRATION FORM ***************/
+.navbar-fixed-bottom {
+  background: #024;
+}
+
+#copyright {
+  color: #fb4f14;
+  text-decoration: none;
+  text-shadow: none;
 }
