@@ -49,7 +49,6 @@
             <h1 class="page_header">myDriveway</h1>
           </a>
         </div>
-
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
@@ -70,10 +69,9 @@
         <li>After submitting your form, an email will auto-populate and you can then send your information to myDriveway. We will review your application and, if approved, your spot(s) will be posted shortly.</li></br>
         <li>Those looking for spots will contact you directly via email to see if your spot is still available.</li></br>
       </ol>
-
       <form class="reg">
-        <label for="eventSelect">Event</label><br>
-        <select name="Event " class="eventReg">
+        <label>Event</label><br>
+        <select class="eventReg">
           <option value="">Select an event here</option>
           <option>Broncos vs. Panthers</option>
           <option>Broncos vs. Colts</option>
@@ -84,14 +82,14 @@
           <option>Broncos vs. Patriots</option>
           <option>Broncos vs. Raiders</option>
         </select><br><br>
-        <label for="email">Email:</label><br>
-        <input class="emailReg" type="text" name="Email Address " size="50"><br><br>
-        <label for="address">Home Address:</label><br>
-        <input class="addressReg" type="text" name="Home Address " size="50"><br><br>
-        <label for="city">City:</label><br>
-        <input class="cityReg" type="text" name="City " size="50"><br><br>
-        <label for="stateSelect">State</label></br>
-        <select class="stateReg" name="State ">
+        <label>Email:</label><br>
+        <input class="emailReg" type="text" size="50"><br><br>
+        <label>Home Address:</label><br>
+        <input class="addressReg" type="text" size="50"><br><br>
+        <label>City:</label><br>
+        <input class="cityReg" type="text" size="50"><br><br>
+        <label>State</label></br>
+        <select class="stateReg">
           <option value="CO">Colorado</option>
           <option value="AL">Alabama</option>
           <option value="AK">Alaska</option>
@@ -145,25 +143,27 @@
           <option value="WI">Wisconsin</option>
           <option value="WY">Wyoming</option>
         </select><br><br>
-        <label for="zipcode">Zip Code:</label><br>
-        <input class="zipReg" type="text" name="Zip Code " size="20"><br><br>
-        <label for="spotsOpen">Spots available:</label><br>
-        <input class="spotsReg" type="text" name="Spots available " size="20"><br><br>
-        <label for="costPerSpot">Price per spot ($):</label><br>
-        <input class="priceReg" type="text" name="Price per spot " size="20"><br><br>
+        <label>Zip Code:</label><br>
+        <input class="zipReg" type="text" size="20"><br><br>
+        <label>Spots available:</label><br>
+        <input class="spotsReg" type="text" size="20"><br><br>
+        <label>Price per spot ($):</label><br>
+        <input class="priceReg" type="text" size="20"><br><br>
         <input class="submit_reg" type="submit" value="Register">
         <input type="reset" value="Reset">
       </form>
-      <div class="alert alert-danger" role="alert">Uh oh! Some parts of your form are not completed yet.</div>
-      <div class="alert alert-success" role="alert">Form complete! You're almost done!</div>
+      <div class="alert alert-danger" role="alert">
+        Uh oh! Some parts of your form are not completed yet.
+      </div>
+      <div class="alert alert-success" role="alert">
+        Form complete! You're almost done!
+      </div>
     </main>
 
     <footer>
       <!-- added navbar-fixed-top to fix navbar in place-->
       <nav class="navbar navbar-default navbar-fixed-bottom">
         <div class="container-fluid">
-
-
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">

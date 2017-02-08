@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
+  // Creates an array of classes so they can later be checked for a completed input.
   var inputClasses = [".eventReg",".emailReg", ".addressReg",".cityReg",".stateReg",".zipReg",".spotsReg",".priceReg"];
 
+  // Loops through all the inputs and selections to make sure the user put something in.
   $('form').on('submit', function(event) {
     for (var i = 0; i < inputClasses.length; i++) {
       var $input = $(inputClasses[i]);

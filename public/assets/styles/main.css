@@ -4,8 +4,14 @@ body {
 }
 
 /*************** NAV BAR ***************/
+.navbar, .navbar-default, .navbar-fixed-top {
+  background: #024;
+}
+
 .navbar-main {
   height: 60px;
+  background: #024;
+  padding-right: 0;
 }
 .car-logo {
   height: 40px;
@@ -17,10 +23,6 @@ body {
   padding: 5px 15px;
 }
 
-.navbar-fixed-top {
-  background: #024;
-}
-
 #active {
   background: #FB4F14;
   color: #fff;
@@ -30,6 +32,9 @@ body {
   font-size: 20px;
   color: #fff;
   height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #bs-example-navbar-collapse-1 {
@@ -76,9 +81,6 @@ body {
 .caption {
   border: 5px solid #024;
   background: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
 }
 
@@ -107,6 +109,7 @@ body {
   padding: 20px;
   margin-top: 50px;
 }
+
 .stadium {
   width: 100%;
   height: auto;
@@ -121,13 +124,7 @@ body {
   height: 300px;
   background-color: grey;
   margin: 15px auto;
-  border: 3px solid #333;
-}
-
-/*************** MATCHUP LOGOS ***************/
-.resetAndMatchup img {
-  width: 150px;
-  height: auto;
+  border: 4px solid #024;
 }
 
 /*************** LOCATION LIST ***************/
@@ -136,14 +133,14 @@ body {
   text-align: center;
 }
 
-.event {
-  font-size: 30px;
-}
-
 .event, .event-select {
   display: table;
   margin: auto;
 
+}
+
+.event {
+  font-size: 30px;
 }
 
 .location_list section {
@@ -174,7 +171,7 @@ body {
   width: 375px;
 }
 
-/*************** REGISTRATION FORM ***************/
+/*************** FOOTER ***************/
 .navbar-fixed-bottom {
   background: #024;
 }
