@@ -49,35 +49,27 @@ body {
                 1px 2px 0 #fb4f14;
 }
 
-/*************** PAGE SUB TITLE ***************/
-.row_main {
-  margin: 30px 0 30px 0;
-  padding: 10px;
+/********** PAGE SUB TITLE AND SCENE ***********/
+.top_row {
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .subtitle-caption {
-  height: 240px;
-}
-
-.page-sub-header {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   color: #024;
   font-size: 35px;
 }
 
-/*************** HOME PAGE: BLIMP IMAGE ***************/
 .driveway_scene {
-  max-width: 600px;
-  margin: 10px 0 40px 0;
-  padding: 20px 30px;
+  margin: 10px 10px 40px 10px;
+  padding: 20px auto;
 }
 
 .driveway_scene img {
-  width: 100%;
+  width: 350px;
   height: auto;
-  max-height: 300px;
-  max-width: 600px;
 }
 
 /*************** RENT AND FIND BOXES ***************/
