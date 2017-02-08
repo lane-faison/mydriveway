@@ -1,12 +1,16 @@
 body {
   background: #eee;
-  padding: 40px 0 120px 0;
+  padding: 70px 0 120px 0;
 }
 
 /*************** NAV BAR ***************/
+.navbar-main {
+  height: 60px;
+}
 .car-logo {
   height: 40px;
   width: auto;
+  margin-top: 5px;
 }
 
 .navbar-brand {
@@ -25,24 +29,32 @@ body {
 #active a, #inactive a {
   font-size: 20px;
   color: #fff;
+  height: 60px;
 }
 
-/*************** PAGE TITLES ***************/
-.page-header {
-  font-family: 'Chewy', cursive;
-  font-size: 75px;
-  text-align: center;
-  letter-spacing: 2px;
-  color: #fb4f14;
-  text-shadow:  -1px -1px 0 #024,
-                1px -1px 0 #024,
-                -1px 1px 0 #024,
-                1px 1px 0 #024;
+#bs-example-navbar-collapse-1 {
+  float: right;
 }
+
+.page_header {
+  font-family: 'Chewy', cursive;
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  letter-spacing: 3px;
+  color: #fff;
+  text-shadow:  -1px -2px 0 #fb4f14,
+                1px -2px 0 #fb4f14,
+                -1px 2px 0 #fb4f14,
+                1px 2px 0 #fb4f14;
+}
+
+/*************** PAGE SUB TITLE ***************/
 
 .page-sub-header {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  margin: 50px auto 40px auto;
   color: #024;
 }
 
@@ -51,7 +63,7 @@ body {
   max-width: 630px;
   background: #fff;
   border: 5px solid #024;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 40px auto;
   padding: 20px 30px;
 }
 
@@ -84,6 +96,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
 }
 
 .team_logos img {
@@ -97,6 +110,7 @@ body {
   display: flex;
   justify-content: center;
   padding: 20px;
+  margin-top: 50px;
 }
 .stadium {
   width: 100%;
@@ -142,11 +156,12 @@ body {
   border-radius: 5px;
   margin: 10px auto;
   background: #f3fff0;
-  font-size: 30px;
-  padding: 20px;
+  font-size: 20px;
+  padding: 10px 20px;
   display: flex;
   justify-content: space-between;
-  max-width: 550px;
+  align-items: center;
+  max-width: 400px;
 }
 
 .emailOwner {

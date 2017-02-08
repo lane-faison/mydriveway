@@ -30,9 +30,10 @@
     <title>myDriveway</title>
   </head>
   <body>
+
     <!-- added navbar-fixed-top to fix navbar in place-->
     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
+      <div class="container-fluid navbar-main">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -44,23 +45,22 @@
           <a class="navbar-brand" href="#">
             <img alt="Brand" class="car-logo" src="./assets/images/logo.png">
           </a>
+          <a class="navbar-brand">
+            <h1 class="page_header">myDriveway</h1>
+          </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav">
-            <li id="inactive"><a href="index.html">Home </a></li>
+            <li id="inactive"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
             <li id="inactive"><a href="about.html">About</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
+
     <main class="container">
-      <!--"page-header" class adds a line under the title and across the container -->
-      <h1 class="page-header">myDriveway</h1>
-
-      <!-- Registration Steps -->
-
       <h4>Steps for registration:</h4>
       <ol>
         <li>Select the event your driveway will be available during.</li></br>
