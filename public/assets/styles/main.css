@@ -179,6 +179,17 @@ body {
   width: 375px;
 }
 
+/*************** ABOUT PAGE ***************/
+.about-section {
+  margin: 15%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.about-section p a {
+  margin-top: 20px;
+}
+
 /*************** FOOTER ***************/
 .navbar-fixed-bottom {
   background: #024;
